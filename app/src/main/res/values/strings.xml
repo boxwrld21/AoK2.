@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Area of Knowledge</string>
+    <string name="start">Начать</string>
+    <string name="logo">aklogo</string>
+    <string name="welcome">Добро пожаловать! Нажмите начать, чтобы продолжить</string>
+    <string name="login">Логин</string>
+    <string name="psw">Пароль</string>
+    <string name="auth">Готово!</string>
+    <string name="auth1">Регистрация</string>
+    <string name="soc">Наши социальные сети</string>
+    <string name="res">Полезные ресурсы</string>
+    <string name="navigation_drawer_open">open</string>
+    <string name="navigation_drawer_close">close</string>
+    <string name="auth_in">Уже есть аккаунт?</string>
+    <string name="auth_en">Авторизация</string>
+</resources>

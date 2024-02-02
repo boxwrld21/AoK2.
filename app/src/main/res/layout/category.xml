@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/draw"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#FFFFFF"
+    android:fitsSystemWindows="true"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    tools:context=".category"
+    tools:ignore="SpeakableTextPresentCheck"
+
+    >
+
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/menu"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:menu="@menu/navigation_menu"
+        tools:ignore="VisualLintBounds" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:foregroundTint="#FFFFFF"
+        android:hapticFeedbackEnabled="false"
+        android:scrollbarAlwaysDrawHorizontalTrack="false"
+        android:scrollbarAlwaysDrawVerticalTrack="false"
+        android:scrollbars="none"
+        app:flow_verticalAlign="bottom">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00FFFFFF"
+            android:minHeight="?attr/actionBarSize"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+             />
+
+
+        <HorizontalScrollView
+            android:id="@+id/scroll"
+            android:layout_width="match_parent"
+            android:layout_height="277dp"
+            android:backgroundTint="@color/white"
+            android:scrollbars="none"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.506"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.498"
+            tools:ignore="SpeakableTextPresentCheck,VisualLintBounds">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:foregroundTint="@color/white"
+                tools:ignore="UselessLeaf,VisualLintBounds">
+
+                <Button
+                    android:id="@+id/design"
+                    android:layout_width="207dp"
+                    android:layout_height="249dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="-120dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#FFFFFF"
+                    android:foreground="@drawable/group_28"
+                    app:cornerRadius="47dp"
+                    tools:ignore="ButtonStyle,SpeakableTextPresentCheck,VisualLintBounds" />
+
+                <Button
+                    android:id="@+id/program"
+                    android:layout_width="231.23dp"
+                    android:layout_height="278dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:backgroundTint="#FFFFFF"
+                    android:foreground="@drawable/group_27"
+                    android:nextFocusUp="@id/english"
+                    android:shadowColor="@color/gray"
+                    android:shadowRadius="@dimen/material_emphasis_medium"
+                    app:cornerRadius="47dp"
+                    tools:ignore="ButtonStyle,SpeakableTextPresentCheck,VisualLintBounds" />
+
+                <Button
+                    android:id="@+id/english"
+                    android:layout_width="207dp"
+                    android:layout_height="249dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:backgroundTint="#FFFFFF"
+                    android:foreground="@drawable/group_30"
+                    app:cornerRadius="47dp"
+                    tools:ignore="ButtonStyle,SpeakableTextPresentCheck" />
+
+                <Button
+                    android:id="@+id/market"
+                    android:layout_width="207dp"
+                    android:layout_height="249dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:backgroundTint="#FFFFFF"
+                    android:foreground="@drawable/group_29"
+                    app:cornerRadius="47dp"
+                    tools:ignore="ButtonStyle,SpeakableTextPresentCheck" />
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.drawerlayout.widget.DrawerLayout>
